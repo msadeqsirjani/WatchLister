@@ -14,8 +14,7 @@ public class TxBehavior<TRequest, TResponse> : IPipelineBehavior<TRequest, TResp
         _logger = logger ?? throw new ArgumentNullException(nameof(logger));
     }
 
-    public async Task<TResponse> Handle(TRequest request, RequestHandlerDelegate<TResponse> next, CancellationToken
-        cancellationToken)
+    public async Task<TResponse> Handle(TRequest request, RequestHandlerDelegate<TResponse> next, CancellationToken cancellationToken)
     {
         if (request is not ITxRequest) return await next();
 
