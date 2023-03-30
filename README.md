@@ -1,6 +1,6 @@
 # 🎬 Watch Lister (Movie Search Application)
 
-[![Actions Status](https://github.com/msadeqsirjani/WatchLister/workflows/build-dot-net/badge.svg?branch=main)](https://github.com/msadeqsirjani/WatchLister/actions)
+[![Actions Status](https://github.com/msadeqsirjani/WatchLister/workflows/build-dot-net/badge.svg?branch=master)](https://github.com/msadeqsirjani/WatchLister/actions)
 
 Watch Lister is a search engine for searching movies and tv-shows with using two popular apis [TMDB](https://developers.themoviedb.org/3) and [Youtube API](https://developers.google.com/youtube/v3) for get all information about the movies and its related trailers with some other features.
 
