@@ -4,7 +4,7 @@ public static class LoggingExtensions
 {
     private const string Template = "{Timestamp:yyyy-MM-dd HH:mm:ss.fff} [{Level:u4}] {Message:lj}{NewLine}{Exception}";
 
-    public static WebApplicationBuilder AddSerilogLogging(this WebApplicationBuilder builder,
+    public static WebApplicationBuilder AddCustomLogging(this WebApplicationBuilder builder,
         Action<LoggerConfiguration?>? action = null)
     {
         builder.Host.UseSerilog((context, provider, configuration) =>
