@@ -1,6 +1,4 @@
-﻿using Microsoft.AspNetCore.Authentication.JwtBearer;
-
-namespace WatchLister.BuildingBlocks.Swagger;
+﻿namespace WatchLister.BuildingBlocks.Swagger;
 
 public static class SwaggerExtensions
 {
