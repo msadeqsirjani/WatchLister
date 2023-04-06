@@ -1,9 +1,17 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Google.Apis.YouTube.v3" Version="1.60.0.2945" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\WatchLister.BuildingBlocks\WatchLister.BuildingBlocks.csproj" />
+  </ItemGroup>
 
 </Project>
