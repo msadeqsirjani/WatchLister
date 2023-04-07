@@ -14,4 +14,8 @@
     <ProjectReference Include="..\WatchLister.BuildingBlocks\WatchLister.BuildingBlocks.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Companies" />
+  </ItemGroup>
+
 </Project>
