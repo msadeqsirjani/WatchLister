@@ -6,7 +6,7 @@ public class TvShow
 {
     public TvShow()
     {
-        CreatedBy = Array.Empty<TVShowCreator>();
+        CreatedBy = Array.Empty<TvShowCreator>();
         EpisodeRunTime = Array.Empty<int>();
         Genres = Array.Empty<Genre>();
         Languages = Array.Empty<string>();
@@ -19,7 +19,7 @@ public class TvShow
 
     public int Id { get; init; }
     public string BackdropPath { get; init; }
-    public IReadOnlyList<TVShowCreator> CreatedBy { get; init; }
+    public IReadOnlyList<TvShowCreator> CreatedBy { get; init; }
     public IReadOnlyList<int> EpisodeRunTime { get; init; }
     public DateTime FirstAirDate { get; init; }
     public IReadOnlyList<Genre> Genres { get; init; }
