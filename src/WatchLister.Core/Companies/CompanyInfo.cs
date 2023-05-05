@@ -1,4 +1,4 @@
-namespace WatchLister.Core.Companies;
+﻿namespace WatchLister.Core.Companies;
 
 public class CompanyInfo : IEqualityComparer<CompanyInfo>
 {
@@ -13,18 +13,11 @@ public class CompanyInfo : IEqualityComparer<CompanyInfo>
     public string Name { get; init; }
     public string? LogoPath { get; init; }
 
-    public bool Equals(CompanyInfo? x, CompanyInfo? y)
-    {
-        return x != null &&
-               y != null &&
-               x.Id == y.Id &&
-               x.Name == y.Name &&
-               x.LogoPath == y.LogoPath;
-    }
+    public bool Equals(CompanyInfo? x, CompanyInfo? y) => x != null && y != null && x.Id == y.Id && x.Name == y.Name && x.LogoPath == y.LogoPath;
 
     public int GetHashCode(CompanyInfo obj)
     {
-        unchecked
+        unchecked // Overflow is fine, just wrap
         {
             var hash = 17;
             hash = hash * 23 + obj.Id.GetHashCode();
