@@ -2,8 +2,8 @@ namespace WatchLister.Core.Generals;
 
 public class Country : IEqualityComparer<Country>
 {
-    public string Iso3166Code { get; init; }
-    public string Name { get; init; }
+    public string Iso3166Code { get; init; } = string.Empty;
+    public string Name { get; init; } = string.Empty;
 
     public bool Equals(Country? x, Country? y) => x != null && y != null && x.Iso3166Code == y.Iso3166Code && x.Name == y.Name;
 
