@@ -4,10 +4,10 @@ public class PersonMovieCastMember
 {
     public int Id { get; init; }
     public bool Adult { get; init; }
-    public string Character { get; init; }
-    public string CreditId { get; init; }
-    public string OriginalTitle { get; init; }
-    public string PosterPath { get; init; }
+    public string Character { get; init; } = string.Empty;
+    public string CreditId { get; init; } = string.Empty;
+    public string OriginalTitle { get; init; } = string.Empty;
+    public string PosterPath { get; init; } = string.Empty;
     public DateTime? ReleaseDate { get; init; }
-    public string Title { get; init; }
+    public string Title { get; init; } = string.Empty;
 }
