@@ -1,4 +1,6 @@
-﻿namespace WatchLister.Core.Movies;
+﻿using Genre = WatchLister.Core.Genres.Genre;
+
+namespace WatchLister.Core.Movies;
 
 public class Movie
 {
